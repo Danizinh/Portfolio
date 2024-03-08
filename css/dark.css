@@ -1,0 +1,22 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+
+.moon {
+    display: none;
+}
+
+.dark,
+.dark header {
+    background-color: #263238;
+    color: #fff;
+}
+
+.dark .sun {
+    display: none;
+}
+
+.dark .moon {
+    display: block;
+}

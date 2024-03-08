@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/dark.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../mobile/responsive_850.css">
+    <link rel="stylesheet" href="../mobile/responsive.css">
+</head>
+
+<body>
+    <header id="header">
+        <div>
+            <input type="checkbox" name="change-theme" id="change-theme" />
+            <label for="change-theme">
+                <img src="../icons/sun (2).svg" class="sun">
+                <img src="../icons/moon (3).svg" class="moon">
+            </label>
+        </div>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/about.html">Sobre mim</a></li>
+                <li><a href="../html/contact.html">Contate-nos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="content">
+                <div class="left-side">
+                    <div class="address details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="topic">Endereco</div>
+                        <div class="text-one">SP, Capital</div>
+                    </div>
+                    <div class="email details">
+                        <i class="fas fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <div class="text-two">danimaltoc@outlook.com</div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="topic-text">Envie-nos uma mensagem
+                    </div>
+                    <p>Se você tiver algum do meu trabalho ou qualquer tipo de pergunta relacionada ao meu trabalho, me
+                        avise.</p>
+                    <form action="../php/index.php" method="POST" autocomplete="off">
+                        <div class="input-box">
+                            <input type="text" id="name" name="name" required placeholder="Digite seu nome"
+                                autocomplete="off" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" id="email" name="email" placeholder="Digite seu email"
+                                autocomplete="off" require>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" id="subject" name="subject" placeholder="Assunto" autocomplete="off"
+                                required>
+                        </div>
+                        <div class="input-box message-box">
+                            <textarea id="message" name="message" class="div-field" autocomplete="off" required
+                                placeholder="Deixe um recado"></textarea>
+                        </div>
+                        <div class="button">
+                            <input class="button" type="submit" name="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/dark.js" defer></script>
+    <script src="../js/script.js" defer></script>
+</body>
+
+</html>

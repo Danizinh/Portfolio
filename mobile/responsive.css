@@ -1,0 +1,39 @@
+@media only screen and (max-width: 600px) {
+
+    .perfil {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .paragraph {
+        width: 79%;
+    }
+
+    .subtitile {
+        display: none;
+    }
+
+    .h-2 {
+        display: flex;
+        justify-content: center;
+        margin: 11px;
+        font-size: 1rem !important;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    #menu a {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: none;
+    }
+
+    .download {
+        height: 5vh;
+        width: 45vw;
+    }
+
+}
