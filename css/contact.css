@@ -18,8 +18,8 @@
   display: flex;
   backdrop-filter: blur(10px);
   background-color: transparent;
-  height: 29vh;
-  width: 15vw;
+  height: 48vh;
+  width: 60vw;
   justify-content: center;
   padding: 2rem;
   box-shadow: 5px 5px 15px #000;

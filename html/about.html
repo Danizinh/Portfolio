@@ -1,198 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/dark.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../mobile/responsive.css" />
+    <script src="../js/dark.js" defer></script>
+    <script src="../js/script.js" defer></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>
+    <script src="../js/words.js" defer></script>
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../css/about.css">
-  <link rel="stylesheet" href="../css/dark.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../mobile/responsive.css">
-  <script src="../js/dark.js" defer></script>
-  <script src="../js/script.js" defer></script>
-  <title>Document</title>
-</head>
+  <body>
+    <div class="container_">
+      <div class="sub">
+        <header id="header">
+          <div class="checkbox">
+            <input type="checkbox" name="change-theme" id="change-theme" />
+            <label for="change-theme">
+              <img src="../icons/sun (2).svg" class="sun" />
+              <img src="../icons/moon (3).svg" class="moon" />
+            </label>
+          </div>
+          <div class="nav-bar">
+            <nav id="nav">
+              <button
+                aria-label="Abrir Menu"
+                id="btn-mobile"
+                aria-haspopup="true"
+                aria-controls="menu"
+                aria-expanded="false"
+              >
+                <span id="hamburger"></span>
+              </button>
+              <ul id="menu" role="menu">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <h1>Jobs and Training</h1>
+        <ul>
+          <li style="--accent-color: #8570ac">
+            <div class="date">2021</div>
+            <div class="title">
+              Graduation in systems analysis and development
+              <br />
+              <p class="date_">JUL 2021 - DEZ 2023</p>
+            </div>
+            <div class="descr">
+              JavaScript - CSS - Python - DevOps - Flutter - Quality Assurance -
+              Problem solving - MySQL - SQL - HTML - MCV
+            </div>
+          </li>
 
-<body>
-  <header id="header">
-    <div>
-      <input type="checkbox" name="change-theme" id="change-theme" />
-      <label for="change-theme">
-        <img src="../icons/sun (2).svg" class="sun">
-        <img src="../icons/moon (3).svg" class="moon">
-      </label>
-    </div>
-    <nav id="nav">
-      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-        <span id="hamburger"></span>
-      </button>
-      <ul id="menu" role="menu">
-        <li><a href="../html/index.html">Home</a></li>
-        <li><a href="../html/about.html">Sobre mim</a></li>
-        <li><a href="../html/contact.html">Contate-nos</a></li>
-      </ul>
-    </nav>
-  </header>
-  <h1 class="h-1">Experiência</h1>
- 
-  <div class="about-me">
-    <div class="about-containers">
-      <div class="details-container">
-        <img src="../img/experience.png" alt="Experience icon" class="icon" />
-        <h3>Experiência</h3>
-        <p class="course">11 meses <br />
-          Full-Stack Developer </p>
-        <p class="course">2 meses <br />
-          Projeto Diário Miccional (BH) </p>
-        </div>
-        <div class="details-container">
-          <img src="../img/education.png" alt="Education icon" class="icon" />
-          <h3>Educação</h3>
-          <p class="course"> Tecnólogo em Análise e Desenvolvimento de Sistemas<br> Pós-graduação em IA</p>
-        </div>
-        <div class="details-container">
-          <img src="../img/education.png" alt="Education icon" class="icon" />
-          <h3>Educação</h3>
-          <p class="course">Inglês<br>Intermediario</p>
-        </div>
-       
-      </div>
-      <section id="experience">
-        <h1 class="title">Skills</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Back-end Development</h2>
-              <div class="article-container">
-                <article>
-                  <img src="../img/checkmark.png" alt="Experience icon" class="icon" />
-                  <div>
-                    <h3>PHP</h3>
-                    <p>Avançado</p>
-                  </div>
-                </article>
-              <article>
-                <img src="../img/checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>JS</h3>
-                  <p>Basico</p>
-                </div>
-              </article>
-              <article>
-                <img src="../img/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>POO</h3>
-                  <p>Avançado</p>
-                </div>
-              </article>
-              <article>
-                <img src="../img/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>MVC</h3>
-                  <p>Avançado</p>
-                </div>
-              </article>
-              <article>
-                <img src="../img/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>LARAVEL</h3>
-                  <p>Estudando</p>
-                </div>
-              </article>
-              <article>
-                <img src="../img/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>MYSQL</h3>
-                  <p>Avançado</p>
-                </div>
-              </article>
-              <article>
-                <img src="../img/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Avançado</p>
-                </div>
-              </article>
-              <article>
-                <img src="../img/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Python</h3>
-                  <p>Avançado</p>
-                </div>
-              </article>
+          <li style="--accent-color: #e24a68">
+            <div class="date">2022</div>
+            <div class="title">
+              Full-Stack Developer
+              <p class="date_">Autônoma | JUL 2022 - MAI 2023 · 11 meses</p>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img src="../img/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>HTML5</h3>
-                  <p>Avançado</p>
-                </div>
-              </article>
-              <article>
-                <img src="../img/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Avançado</p>
-                </div>
-              </article>
-              <article>
-                <img src="../img/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basico</p>
-                </div>
-              </article>
-              <article>
-                <img src="../img/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Avançado</p>
-                </div>
-              </article>
+            <div class="descr">
+              Expertise in using HTML, CSS, JavaScript, PHP and PHPMailer tools
+              to create websites. <br />
+              <br />Mastery of the strategic approach to solving complex
+              problems, ensuring the applicability of effective solutions.
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Others</h2>
-            <div class="article-container">
-              <article>
-                <img src="../img/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>GIT</h3>
-                  <p>Avançado</p>
-                </div>
-              </article>
-              <article>
-                <img src="../img/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Gihub</h3>
-                  <p>Basico</p>
-                </div>
-              </article>
-             
-              
+          </li>
+          <li style="--accent-color: #fbca3e">
+            <div class="date">2024</div>
+            <div class="title">
+              AI Postgraduate
+
+              <p class="date_">MAI 2024 - JAN 2025</p>
             </div>
-          </div>
+
+            <div class="descr">
+              Machine learning - Matplotlib - NumPy - Seaborn - Scikit-Learn -
+              Regression models - Pipeline development - Pandas (Software) -
+              Artificial intelligence - Natural language processing (NLP) -
+              Problem solving - K nearest neighbors (KNN) - Jupyter
+            </div>
+          </li>
+          <li style="--accent-color: #fe70be">
+            <div class="date">2024</div>
+            <div class="title">
+              <p class="date_">Autônoma | JUL 2024 - now - 3 months</p>
+            </div>
+            <div class="descr">
+              • Front-end development: Creating an intuitive and pleasant user
+              experience.. <br />
+              <br />• Back-end development: Implementation of APIs and business
+              logic. <br />
+              <br />• Database Management: Database design, maintenance and
+              optimization..
+            </div>
+          </li>
+          <li style="--accent-color: #4cadad">
+            <div class="date">2024</div>
+            <div class="title">
+              Bullions Web App
+              <p class="date_">Autônoma | JUL 2024 - now - 3 months</p>
+            </div>
+            <div class="descr">
+              Responsible for developing a web application that will be used
+              with investment ifins for the train market
+            </div>
+          </li>
+        </ul>
+
+        <div class="about-me">
+          <span class="tools">Skills and tools</span>
+          <div id="word-cloud"></div>
+          <button class="button-86" role="button">
+            <a href="../doc/Currículo Daniela.pdf" download>DOWNLOAD CV</a>
+          </button>
         </div>
       </div>
-    </section>
-
-    <div class="about-me">
-      <button class="button-86" role="button"> <a href="../doc//Currículo (1).pdf" download>DOWNLOAD
-          CV</a></button>
-
-
-
-
     </div>
-</body>
-
+  </body>
 </html>
